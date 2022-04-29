@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styles: []
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'first-app';
+  name = 'Lubos';
+  count = 0;
+
+  increment() {
+    this.count++;
+  }
 }
