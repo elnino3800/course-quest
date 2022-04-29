@@ -5,10 +5,5 @@ import {Component} from '@angular/core';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  name = 'Lubos';
-  count = 0;
 
-  increment() {
-    this.count++;
-  }
 }
