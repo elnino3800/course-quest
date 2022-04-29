@@ -16,7 +16,8 @@ import { CoursesComponent } from './courses/courses.component';
 import { TeachersComponent } from './teachers/teachers.component';
 import { NewCourseComponent } from './new-course/new-course.component';
 import { CourseDetailComponent } from './course-detail/course-detail.component';
-import { EditCourseComponent } from './edit-course/edit-course.component'
+import { EditCourseComponent } from './edit-course/edit-course.component';
+import { LoginComponent } from './login/login.component'
 
 registerLocaleData(localeSk)
 
@@ -32,7 +33,8 @@ registerLocaleData(localeSk)
     TeachersComponent,
     NewCourseComponent,
     CourseDetailComponent,
-    EditCourseComponent
+    EditCourseComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
