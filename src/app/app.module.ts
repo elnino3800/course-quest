@@ -11,7 +11,12 @@ import { TodoComponent } from './todo/todo.component';
 import {LocalStorageModule} from "angular-2-local-storage";
 import {registerLocaleData} from "@angular/common";
 import localeSk from '@angular/common/locales/sk';
-import { TodoItemPipe } from './todo-item.pipe'
+import { TodoItemPipe } from './todo-item.pipe';
+import { CoursesComponent } from './courses/courses.component';
+import { TeachersComponent } from './teachers/teachers.component';
+import { NewCourseComponent } from './new-course/new-course.component';
+import { CourseDetailComponent } from './course-detail/course-detail.component';
+import { EditCourseComponent } from './edit-course/edit-course.component'
 
 registerLocaleData(localeSk)
 
@@ -22,7 +27,12 @@ registerLocaleData(localeSk)
     HomeComponent,
     NotFoundComponent,
     TodoComponent,
-    TodoItemPipe
+    TodoItemPipe,
+    CoursesComponent,
+    TeachersComponent,
+    NewCourseComponent,
+    CourseDetailComponent,
+    EditCourseComponent
   ],
   imports: [
     BrowserModule,
