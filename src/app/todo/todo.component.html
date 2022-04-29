@@ -6,7 +6,8 @@
 
 <ul>
   <li *ngFor="let item of items">
-    <input type="checkbox" [(ngModel)]="item.done"/> {{item.text}}
+    <input type="checkbox" [(ngModel)]="item.done" (ngModelChange)="onToggle(item)"/>
+    <span [class.completed]="item.done">{{item.text}}</span> {{item.completed | date: 'medium'}}
   </li>
 </ul>
 

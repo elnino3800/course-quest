@@ -38,4 +38,8 @@ export class TodoComponent {
 
     input.value = '';
   }
+
+  onToggle(item: TodoItem) {
+    this.todoService.onToggle(item);
+  }
 }
