@@ -18,6 +18,7 @@ import { NewCourseComponent } from './new-course/new-course.component';
 import { CourseDetailComponent } from './course-detail/course-detail.component';
 import { EditCourseComponent } from './edit-course/edit-course.component';
 import { LoginComponent } from './login/login.component'
+import {HttpClientModule} from "@angular/common/http";
 
 registerLocaleData(localeSk)
 
@@ -43,7 +44,8 @@ registerLocaleData(localeSk)
     LocalStorageModule.forRoot({
       prefix: 'my-first-app',
       storageType: 'localStorage'
-    })
+    }),
+    HttpClientModule
   ],
   providers: [
     {provide: LOCALE_ID, useValue: 'sk'}
