@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import {Component} from '@angular/core';
 import {CoursesService} from "../courses.service";
 import {Course} from "../course";
 
@@ -11,7 +11,11 @@ export class CoursesComponent {
   items: Course[] | undefined;
 
   constructor(private coursesService: CoursesService) {
-    coursesService.getAll()
+    this.reload();
+  }
+
+  reload() {
+    this.coursesService.getAll()
       .subscribe(value => {
         this.items = value;
       })
