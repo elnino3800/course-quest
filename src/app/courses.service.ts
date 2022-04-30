@@ -27,6 +27,6 @@ export class CoursesService {
   }
 
   edit(course: Course) {
-    return this.http.put<number>(`/api/courses/${course.id}`, course)
+    return this.http.put<void>(`/api/courses/${course.id}`, course)
   }
 }
