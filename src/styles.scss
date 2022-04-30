@@ -1,3 +1,15 @@
 .completed {
   text-decoration: line-through;
 }
+
+.icon-link-column {
+  width: 30px;
+}
+
+a:not([href]):not([tabindex]) {
+  color: #007bff;
+}
+
+a:hover{
+  cursor: pointer;
+}
