@@ -25,15 +25,10 @@ export class EditCourseComponent  {
       })
   }
 
-
-  submit(form: NgForm) {
-    if(form.invalid || !this.item){
-      return
-    }
-
-    this.coursesService.edit(this.item)
+  submit(course: Course) {
+    this.coursesService.edit(course)
       .subscribe(() => {
-        this.router.navigate(['/courses', this.id])
+        this.router.navigate(['/courses', course.id])
       })
   }
 }

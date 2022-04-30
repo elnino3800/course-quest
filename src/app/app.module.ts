@@ -19,6 +19,7 @@ import { CourseDetailComponent } from './course-detail/course-detail.component';
 import { EditCourseComponent } from './edit-course/edit-course.component';
 import { LoginComponent } from './login/login.component'
 import {HttpClientModule} from "@angular/common/http";
+import { CourseFormComponent } from './course-form/course-form.component';
 
 registerLocaleData(localeSk)
 
@@ -35,7 +36,8 @@ registerLocaleData(localeSk)
     NewCourseComponent,
     CourseDetailComponent,
     EditCourseComponent,
-    LoginComponent
+    LoginComponent,
+    CourseFormComponent
   ],
   imports: [
     BrowserModule,

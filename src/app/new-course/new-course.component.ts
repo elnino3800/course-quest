@@ -16,12 +16,8 @@ export class NewCourseComponent {
               private router: Router) { }
 
 
-  submit(form: NgForm) {
-    if(form.invalid){
-      return
-    }
-
-    this.courses.add(this.item)
+  submit(course: Course) {
+    this.courses.add(course)
       .subscribe((id) => {
         this.router.navigate(['/courses', id])
       })
