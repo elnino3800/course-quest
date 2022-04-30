@@ -24,7 +24,14 @@
 
       </ul>
 
-      <a class="btn btn-primary" routerLink="login">Login</a>
+      <span *ngIf="user$ | async as user; else logoutTmp">
+        <span class="navbar-text mx-2">{{user.username}}</span>
+        <a class="btn btn-secondary" (click)="logout()">Logout</a>
+      </span>
+
+      <ng-template #logoutTmp>
+        <a class="btn btn-primary" routerLink="login">Login</a>
+      </ng-template>
     </div>
   </div>
 </nav>
