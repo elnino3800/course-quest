@@ -21,4 +21,12 @@ export class CoursesComponent {
       })
   }
 
+  delete(item: Course) {
+    if(confirm(`Delete item ${item.name}?`)){
+      this.coursesService.delete(item)
+        .subscribe(() => {
+          this.reload();
+        })
+    }
+  }
 }
