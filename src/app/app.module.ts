@@ -21,6 +21,8 @@ import {LoginComponent} from './login/login.component'
 import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import {CourseFormComponent} from './course-form/course-form.component';
 import {UserInterceptor} from "./user.interceptor";
+import {NgbModalModule} from '@ng-bootstrap/ng-bootstrap';
+import { ModalContentComponent } from './modal-content/modal-content.component';
 
 registerLocaleData(localeSk)
 
@@ -38,7 +40,8 @@ registerLocaleData(localeSk)
     CourseDetailComponent,
     EditCourseComponent,
     LoginComponent,
-    CourseFormComponent
+    CourseFormComponent,
+    ModalContentComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +51,8 @@ registerLocaleData(localeSk)
       prefix: 'my-first-app',
       storageType: 'localStorage'
     }),
-    HttpClientModule
+    HttpClientModule,
+    NgbModalModule
   ],
   providers: [
     {provide: LOCALE_ID, useValue: 'sk'},
