@@ -8,6 +8,8 @@ import {CoursesComponent} from "./courses/courses.component";
 import {TeachersComponent} from "./teachers/teachers.component";
 import {LoginComponent} from "./login/login.component";
 import {NewCourseComponent} from "./new-course/new-course.component";
+import {CourseDetailComponent} from "./course-detail/course-detail.component";
+import {EditCourseComponent} from "./edit-course/edit-course.component";
 
 const routes: Routes = [
   {path:'home', component: HomeComponent},
@@ -15,6 +17,8 @@ const routes: Routes = [
   {path:'todo', component: TodoComponent},
   {path:'courses', component: CoursesComponent},
   {path:'courses/new', component: NewCourseComponent},
+  {path:'courses/:id', component: CourseDetailComponent},
+  {path:'courses/:id/edit', component: EditCourseComponent},
   {path:'teachers', component: TeachersComponent},
   {path:'login', component: LoginComponent},
   {path:'', redirectTo: 'home', pathMatch: 'full'},
